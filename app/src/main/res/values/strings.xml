@@ -1,0 +1,52 @@
+<resources>
+
+    <!--For Activity Login Activity !-->
+    <string name="app_name">GoDown</string>
+    <string name="Welcome">Let\'s get started!</string>
+    <string name="Email">Email Id</string>
+    <string name="password">*******</string>
+    <string name="sign_up">Don\'t have a Account? Sign Up</string>
+    <string name="new_user">New User?</string>
+    <string name="login">Login</string>
+    <string name="alread_user">Aleady a user? Login In</string>
+    <string name="Signup">Sign Up</string>
+    <string name="address">Address</string>
+    <string name="phonenum">Phone Number</string>
+    <string name="area">Area (eg. Basantapur)</string>
+    <string name="city">City</string>
+    <string name="name">Full Name</string>
+    <string name="next">Next</string>
+    <string name="loading">Just a second</string>
+    <string name="signout">Sign Out</string>
+    <string name="started">Get Started</string>
+
+    <!--For Activity Main Display !-->
+    <string name="verify">Verify your Email Address</string>
+    <string name="step1">-Go to your Mail Box and Look for Karkhana</string>
+    <string name="step2">-Click the link given to Verify your Email Address</string>
+    <string name="hello">Hello</string>
+    <string name="Welcome_message">   Welcome to Karkhana.</string>
+    <string name="welcome">Here You can post items \n    you no longer need.</string>
+    <string name="search">Search</string>
+    <string name="title_activity_display_post">Display_post</string>
+    <string name="refresh">Refresh</string>
+    <string name="applabel">AppLabel</string>
+
+    <!--For Activity Navigaation Display !-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--String Array for Spinner for choosing Category !-->
+    <string-array name="Category">
+        <item> Select One</item>
+        <item> Car </item>
+        <item> Technology </item>
+        <item> Household </item>
+        <item> Personal Items</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<root>
+    <item name='android.app.UiAutomation FLAG_DONT_SUPPRESS_ACCESSIBILITY_SERVICES'>
+        <annotation name='java.lang.Deprecated' />
+        <annotation name='android.support.annotation.Nullable' />
+    </item>
+</root>

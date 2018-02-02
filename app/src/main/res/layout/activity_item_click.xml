@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.karkhana.prash.karkhana.activities.ItemClick">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:background="@color/Background">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarItem"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/toolbarTitleText"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/Background"
+        android:id="@+id/linear">
+
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffff"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_pic"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_round_user"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/name"
+                android:textColor="@color/sign_up_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:text= "Posted "/>
+            <TextView
+                android:id="@+id/DayofPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:text= "2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:text= "Days Ago"/>
+
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttoncolorchange"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="14dp"
+                android:onClick="saveThePost"
+                />
+        </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:background="#ffff"
+         android:layout_marginTop="10dp"
+         android:paddingTop="14dp"
+         android:paddingBottom="8dp"
+         android:id="@+id/priceSection">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:textSize="26sp"
+             style="@style/Base.TextAppearance.AppCompat.Large"
+             android:textColor="@color/sign_up_text"
+             android:text="Car"
+             android:textStyle="bold"
+             android:layout_marginStart="8dp"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Rs. 15,000"
+                 android:textColor="@android:color/holo_green_dark"
+                 android:layout_marginStart="16dp"
+                 android:layout_marginTop="6dp"
+                 android:textStyle="bold"
+                 android:textSize="18dp"/>
+
+
+         </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify"
+        android:layout_marginStart="8dp"
+        android:id="@+id/PostTitle"
+        android:layout_marginTop="4dp"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        android:text="@string/verify"
+        android:id="@+id/PostDescription"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:layout_marginBottom="14dp"/>
+
+     </LinearLayout>
+    </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/linear"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/related_posts_itemClick"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/call"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:background="@drawable/buttonbackgorund"
+                android:drawableStart="@drawable/ic_call"
+                android:onClick="CalltheUser"/>
+
+            <Button
+                android:id="@+id/Text"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/buttonbackgorund"
+                android:drawableStart="@drawable/ic_action_name"
+                android:onClick="MessageTheUser" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>

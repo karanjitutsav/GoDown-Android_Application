@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#364a76</color>
+    <color name="colorPrimaryDark">#1b253b</color>
+    <color name="textColorPrimary">#fff5f5f5</color>
+    <color name="toolbarTitleText">#edebf4</color>
+    <color name="colorAccent">#5B7DC7</color>
+    <color name="textColor">#F0E2ca</color>
+    <color name="Button_Color">#A4587B</color>
+    <color name="Login_Button">#723E68</color>
+    <color name="Background">#dbe5ec</color>
+    <color name="normal_text_color">#f1f0f0</color>
+    <color name="sign_up_page">#3C1C41</color>
+    <color name="sing_up_back">#723E68</color>
+    <color name="sign_up_text">#723E68</color>
+    <color name="gradient_endcolor">#1b253b</color>
+    <color name="gradient">#212D48</color>
+    <color name="startcolor">#384d7a</color>
+    <color name="btn_back">#5D667A</color>
+    <color name="dar_brown">#3D4041</color>
+    <color name="btn_ornage_back">#f26101</color>
+    <color name="toolbar_background">#f0f1f2</color>
+
+</resources>

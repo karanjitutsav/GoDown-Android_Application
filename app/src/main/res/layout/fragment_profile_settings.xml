@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_area"
+
+    tools:context="com.karkhana.prash.karkhana.Menu.Drawer.Fragments.Profile_settings">
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl"
+    android:background="@color/colorPrimary"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_user_profile"
+        app:civ_border_color="@color/textColorPrimary"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/profilesettings_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user_profile_photo"
+        android:layout_below="@+id/user_profile_photo"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:text="John Doxx"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="24sp"
+        android:layout_marginBottom="35dp"/>
+</RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:orientation = "vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phonenum" />
+
+        <TextView
+            android:id="@+id/profilesettings_userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="320-224-9276"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/profilesettings_userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test@test.com"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/profilesettings_userArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chhauni"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/profilesettings_userCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kathmandu"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_verify_email"
+            android:contentDescription="@string/verify"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

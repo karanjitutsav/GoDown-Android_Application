@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.karkhana.prash.karkhana.Display_post"
+    tools:showIn="@layout/app_bar_display_post">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyler_ad_posts"
+        android:clipToPadding="false">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framelayout">
+    </FrameLayout>
+
+</RelativeLayout>

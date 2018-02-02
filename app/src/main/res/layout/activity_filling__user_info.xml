@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.karkhana.prash.karkhana.activities.Filling_UserInfo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/next_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Welcome"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_round_user"
+            android:layout_gravity="center"
+            android:clickable="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/textColor"
+            android:onClick="updateUserProfilePhoto"
+            android:focusable="true" />
+        <EditText
+            android:id="@+id/First_Name"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:paddingStart="4dp"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"/>
+
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"/>
+
+        <EditText
+            android:id="@+id/Area"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/area"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"/>
+
+        <EditText
+            android:id="@+id/City"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/city"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"/>
+
+
+        <EditText
+            android:id="@+id/PhoneNumber"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/phonenum"
+            android:inputType="phone"
+            android:textSize="14sp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/next"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:textSize="24sp"
+        android:textColor="@color/textColor"
+        android:background="@color/btn_ornage_back" />
+
+</RelativeLayout>
